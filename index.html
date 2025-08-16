@@ -1,0 +1,136 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+<html lang="en"> <!-- set language -->
+<head> <!-- head start -->
+  <meta charset="UTF-8"> <!-- encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
+  <title>SCC — Civil Design Studio</title> <!-- page title -->
+  <meta name="description" content="SCC is a civil engineering design studio offering house plans, structural drawings, and Design + Material packages."> <!-- SEO -->
+  <link rel="stylesheet" href="styles.css"> <!-- css link -->
+  <script type="application/ld+json"> <!-- structured data for local business -->
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SCC — Civil Design Studio",
+    "image": "assets/logo.svg",
+    "url": "https://your-domain.com",
+    "telephone": "+92-300-0000000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Your City",
+      "addressRegion": "Your Province/State",
+      "addressCountry": "PK"
+    },
+    "areaServed": "Your City and nearby areas",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }]
+  }
+  </script> <!-- end json-ld -->
+</head> <!-- head end -->
+<body> <!-- body start -->
+  <header class="nav"> <!-- top navbar -->
+    <div class="container nav-inner"> <!-- centered nav -->
+      <img src="assets/logo.svg" alt="SCC Logo" height="36"> <!-- logo -->
+      <nav> <!-- links -->
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero container"> <!-- hero -->
+    <p class="small">Civil Engineering • House Plans • Design + Material</p>
+    <h1>Smart, affordable designs for homes and small projects</h1>
+    <p>SCC has completed 200+ designs and has 100+ in progress. Get a complete package—from concept to construction drawings, and optional Design + Material service.</p>
+    <div class="cta">
+      <a class="btn primary" href="#contact">Get a Free Quote</a>
+      <a class="btn" href="#portfolio">See Our Work</a>
+    </div>
+    <div class="badges">
+      <span>✓ 200+ completed projects</span>
+      <span>✓ Fast delivery</span>
+      <span>✓ Budget-friendly</span>
+    </div>
+  </section>
+  <section id="services" class="section"> <!-- services -->
+    <div class="container">
+      <h2>Services</h2>
+      <div class="grid cards">
+        <div class="card">
+          <h3>House Designs</h3>
+          <p>Concept layouts, floor plans, elevations, and working drawings.</p>
+          <p class="small">Starts from PKR 25,000</p>
+        </div>
+        <div class="card">
+          <h3>Design + Material</h3>
+          <p>Full design package with a curated material list and vendor suggestions.</p>
+          <p class="small">Tailored quote after site review</p>
+        </div>
+        <div class="card">
+          <h3>3D Visualization</h3>
+          <p>Exterior/Interior 3D views to visualize the final look before building.</p>
+          <p class="small">Optional add-on</p>
+        </div>
+        <div class="card">
+          <h3>Site Visits</h3>
+          <p>On-site measurements, supervision, and quality checks (on request).</p>
+          <p class="small">Your city + nearby areas</p>
+        </div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="big">200+</div><div class="small">Completed Designs</div></div>
+        <div class="kpi"><div class="big">100+</div><div class="small">Active Projects</div></div>
+        <div class="kpi"><div class="big">5⭐</div><div class="small">Client Reviews</div></div>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" class="section"> <!-- portfolio -->
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p class="small">Replace with your actual project images and captions.</p>
+      <div class="gallery">
+        <img src="assets/proj1.svg" alt="Project 1">
+        <img src="assets/proj2.svg" alt="Project 2">
+        <img src="assets/proj3.svg" alt="Project 3">
+        <img src="assets/proj4.svg" alt="Project 4">
+        <img src="assets/proj5.svg" alt="Project 5">
+        <img src="assets/proj6.svg" alt="Project 6">
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section"> <!-- about -->
+    <div class="container">
+      <h2>About</h2>
+      <p>SCC is a small, focused team led by a civil engineer. We keep things simple, clear, and budget-friendly. Our process: understand your needs, design with care, and guide you to build confidently.</p>
+    </div>
+  </section>
+  <section id="contact" class="section"> <!-- contact -->
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="note small">Tip: WhatsApp is fastest. You can also email us.</div>
+      <div class="form">
+        <label for="name">Name</label>
+        <input id="name" class="input" placeholder="Your name">
+        <label for="email">Email</label>
+        <input id="email" class="input" placeholder="you@example.com">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Tell us about your plot size, location, budget, and timeline."></textarea>
+        <div class="cta">
+          <button class="btn primary" onclick="toWhatsApp()">WhatsApp Us</button>
+          <button class="btn" onclick="toEmail()">Email Us</button>
+        </div>
+        <p class="small">By contacting us, you agree to our simple terms of service.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer container"> <!-- footer -->
+    <div>© <span id="year"></span> SCC — Civil Design Studio</div>
+    <div class="small">Built as a simple static site you can host for free.</div>
+  </footer>
+  <script src="script.js"></script> <!-- js -->
+</body>
+</html>
